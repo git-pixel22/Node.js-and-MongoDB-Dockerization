@@ -44,6 +44,9 @@ Now our mongo database is up and running so let's connect our express app to the
 Now we need to make sure that our mongo container is spun up first, cause if node container is up first it will try to connect to database and it'll cause some errors or crash the application.
 It's not only about starting the mongo container first, we need to make sure that database too is up and running before the node or application container. What I did is I just made the mongoose try to connect after every 5 sec if no connections is made.
 
+Day 4:
+
+So now the connection between db and node-app is made, we're going to make a crud application.
 
 
 
