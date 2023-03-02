@@ -42,7 +42,7 @@ Day 3:
 Now our mongo database is up and running so let's connect our express app to the database. We are going to use the library called mongoose which makes it a little easier to talk to the database. One little thing we did here was rather than giving ip-addr to the function, we gave service name since docker uses built-in dns for custom containers. (containers that we create)
 
 Now we need to make sure that our mongo container is spun up first, cause if node container is up first it will try to connect to database and it'll cause some errors or crash the application.
-It's not only about starting the mongo container first, we need to make sure that database too is up and running before the node or application container.
+It's not only about starting the mongo container first, we need to make sure that database too is up and running before the node or application container. What I did is I just made the mongoose try to connect after every 5 sec if no connections is made.
 
 
 
