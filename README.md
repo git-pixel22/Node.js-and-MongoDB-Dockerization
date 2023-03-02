@@ -3,7 +3,7 @@ To avoid "CLIENT CLOSED ERROR", use redis v3.1.2 instead of version 4+. Use "npm
 If you get "bash: mongo: command not found" at 1:49:00, then Use mongosh. mongo shell was deprecated in mongo:6.0.
 
 
-Hour 1:
+Day 1:
 
 Firstly I created a simple node.js/express app. Then I created a dockerfile to create an image that will create a container with the application files -> index.js, package,json,etc.
 
@@ -23,7 +23,7 @@ Another issue with bind mount is that the changes made via container were also r
 Observed I had some unused volumes lying around so removed them. 
 
 
-Hour 2:
+Day 2:
 
 Then the command I was using to spin up a container was pretty long. So to optimize it we're gonna use docker-compose. Also with docker-compose, keep in mind that it is pretty stupid. If you make a change in the dockerfile and spin up containers again using docker-compose, it will not build a new image, rather will use the same old image. So we need to tell it explicitly to create a new image by using `--build` flag.
 
@@ -37,7 +37,7 @@ Also when creating named volumes we also need to mention created named volumes i
 
 Alright so the thing is when we tear down containers using -v flag in docker-compose, it removes the named volumes as well. So to work around this, what we can do is to delete all the unused volume using "docker volume prune", it's better to use this command when your containers are up and running so that you don't accidently delete a volume that you didn't wanted to.
 
-Hour 3:
+Day 3:
 
 Now our mongo database is up and running so let's connect our express app to the database. We are going to use the library called mongoose which makes it a little easier to talk to the database. One little thing we did here was rather than giving ip-addr to the function, we gave service name since docker uses built-in dns for custom containers. (containers that we create)
 
