@@ -46,7 +46,11 @@ It's not only about starting the mongo container first, we need to make sure tha
 
 Day 4:
 
-So now the connection between db and node-app is made, we're going to make a crud application.
+So now the connection between db and node-app is made, we're going to make a crud application. Made controllers, models and routes.
+
+Day 5:
+
+Okay now we're going to make a user sign up and login functionality and to do that we introduce a redis container.
 
 
 
