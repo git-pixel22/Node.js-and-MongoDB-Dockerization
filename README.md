@@ -52,5 +52,7 @@ Day 5:
 
 Okay now we're going to make a user sign up and login functionality and to do that we introduce a redis container.
 
+Day 6-7:
 
+Killed crud app, things were getting slight complicated and I don't like do things without understanding them. So I'll leave this project till here, upgrade my knowledge more and then continue with making a crud app, introducing more containers and instances and make this app more functional to simulate real world scenarios. : )
 
