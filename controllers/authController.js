@@ -7,11 +7,11 @@ exports.signUp = async (req, res) => {
             status: 'success',
             data: {
                 user: newUser
-            }
-        })
+            },
+        });
     }catch(e){
         res.status(400).json({
-            status: 'fail'
-        })
+            status: 'fail',
+        });
     }
 }
