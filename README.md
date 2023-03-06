@@ -1,6 +1,7 @@
+tips for me:
 To avoid "CLIENT CLOSED ERROR", use redis v3.1.2 instead of version 4+. Use "npm uninstall redis" to remove redis version 4 and install version 3.1.2 using --> npm i redis@3.1.2
 
-If you get "bash: mongo: command not found" at 1:49:00, then Use mongosh. mongo shell was deprecated in mongo:6.0.
+If you get "bash: mongo: command not found", then Use mongosh. mongo shell was deprecated in mongo:6.0.
 
 
 Day 1:
