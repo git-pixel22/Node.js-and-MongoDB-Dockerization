@@ -1,3 +1,12 @@
+This project was created to practice the docker concepts I learned. In this project I've created a simple node/express app and a mongodb and containerzed both of them. Afterwards I practiced things like docker-compose, bind volumes, making sure mongodb container starts first and a lot of other stuff. Everything I did while building/learning this project is documented below.
+<br>
+<br>
+<br>
+<br>
+<br>
+
+Here's my thought process <b>documented</b> during this project.
+
 tips for me:
 To avoid "CLIENT CLOSED ERROR", use redis v3.1.2 instead of version 4+. Use "npm uninstall redis" to remove redis version 4 and install version 3.1.2 using --> npm i redis@3.1.2
 
